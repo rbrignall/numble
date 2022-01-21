@@ -1,4 +1,5 @@
-import { InformationCircleIcon } from '@heroicons/react/outline'
+import { CogIcon } from '@heroicons/react/outline'
+import { QuestionMarkCircleIcon } from '@heroicons/react/outline'
 import { ChartBarIcon } from '@heroicons/react/outline'
 import { useState, useEffect } from 'react'
 import { Alert } from './components/alerts/Alert'
@@ -109,14 +110,20 @@ function App() {
         variant="success"
       />
       <div className="flex w-80 mx-auto items-center mb-8">
-        <h1 className="text-xl grow font-bold">Numble</h1>
-        <InformationCircleIcon
+        <QuestionMarkCircleIcon
           className="h-6 w-6 cursor-pointer"
           onClick={() => setIsInfoModalOpen(true)}
         />
+        <div className="mx-auto">
+            <h1 className="text-2xl uppercase grow font-bold">Numble</h1>
+        </div>
         <ChartBarIcon
           className="h-6 w-6 cursor-pointer"
           onClick={() => setIsStatsModalOpen(true)}
+        />
+        <CogIcon
+          className="h-6 w-6 cursor-pointer"
+          onClick={() => setIsAboutModalOpen(true)}
         />
       </div>
       <Grid guesses={guesses} currentGuess={currentGuess} />
@@ -151,14 +158,6 @@ function App() {
         isOpen={isAboutModalOpen}
         handleClose={() => setIsAboutModalOpen(false)}
       />
-
-      <button
-        type="button"
-        className="mx-auto mt-8 flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-indigo-700 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-        onClick={() => setIsAboutModalOpen(true)}
-      >
-        About this game
-      </button>
     </div>
   )
 }

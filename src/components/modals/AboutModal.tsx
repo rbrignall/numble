@@ -60,21 +60,24 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
                     About
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      This is an open source clone of the game Wordle -{' '}
+                    <p className="text-sm text-gray-500 text-left">
+                      Numble is made by{' '}<a href="https://twitter.com/rbrignall" className="font-bold">rbrignall</a>{' '}using an open source clone of the game Wordle.
+                    </p>
+                    <p className="text-sm text-gray-500 text-left">
+                      You can{' '}
                       <a
                         href="https://github.com/hannahcode/wordle"
-                        className="underline font-bold"
+                        className="font-bold"
                       >
-                        check out the code here
+                        check out the source code here
                       </a>{' '}
                       and{' '}
                       <a
                         href="https://www.powerlanguage.co.uk/wordle/"
-                        className="underline font-bold"
+                        className="font-bold"
                       >
-                        play the original here
-                      </a>
+                        play the original Wordle here
+                      </a>.
                     </p>
                   </div>
                 </div>

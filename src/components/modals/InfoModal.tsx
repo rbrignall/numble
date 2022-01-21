@@ -61,43 +61,43 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                     How to play
                   </Dialog.Title>
                   <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      Guess the WORDLE in 6 tries. After each guess, the color
+                    <p className="text-sm text-gray-500 text-left">
+                      Guess the NUMBLE in 6 tries. After each guess, the color
                       of the tiles will change to show how close your guess was
-                      to the word.
+                      to the word, which will have something to do with mathematics.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="W" status="correct" />
-                      <Cell value="E" />
+                      <Cell value="M" status="correct" />
                       <Cell value="A" />
-                      <Cell value="R" />
-                      <Cell value="Y" />
+                      <Cell value="T" />
+                      <Cell value="H" />
+                      <Cell value="S" />
                     </div>
-                    <p className="text-sm text-gray-500">
-                      The letter W is in the word and in the correct spot.
+                    <p className="text-sm text-gray-500 text-left">
+                      The letter M is in the word and in the correct spot.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="P" />
-                      <Cell value="I" />
+                      <Cell value="R" />
+                      <Cell value="U" />
                       <Cell value="L" status="present" />
-                      <Cell value="O" />
-                      <Cell value="T" />
+                      <Cell value="E" />
+                      <Cell value="S" />
                     </div>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-500 text-left">
                       The letter L is in the word but in the wrong spot.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="V" />
+                      <Cell value="O" />
+                      <Cell value="K" />
                       <Cell value="A" />
-                      <Cell value="G" />
-                      <Cell value="U" status="absent" />
-                      <Cell value="E" />
+                      <Cell value="Y" status="absent" />
+                      <Cell value="!" />
                     </div>
-                    <p className="text-sm text-gray-500">
-                      The letter U is not in the word in any spot.
+                    <p className="text-sm text-gray-500 text-left">
+                      The letter Y is not in the word in any spot. Oh, and you can't actually type "!" in the game.
                     </p>
                   </div>
                 </div>
